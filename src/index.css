@@ -1,0 +1,454 @@
+
+html, body, #root{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  max-width: 100%;
+    overflow-x: hidden;
+}
+
+.cw_navbar__mainnav{
+      background-color: #142c8e;
+      display: flex;
+      height: 6rem;
+      justify-content: center;
+      width: 100%;
+} 
+
+.cw_navbar__logo {
+  align-items: center;
+  display: flex;
+  padding-left: 1.25rem;
+}
+
+.icon-svg {
+  display: inline-block;
+  line-height: 1;
+}
+
+.icon-size {
+  font-size: 1.875rem;
+  height: 30px;
+  width: 30px;
+}
+
+.cw_navbar__primary-item {
+  align-items: center;
+  border: 1px solid #142c8e;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  margin-left: 0.5rem;
+  min-height: 3rem;
+  padding: 0 1rem;
+  text-align: center;
+  transition: border-color .4s;
+}
+
+.cw_navbar__primary {
+  align-items: center;
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cw_navbar__mainnav nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cw_navbar__nav {
+  width: 60rem;
+  display: flex;
+  justify-content: flex-start;
+}
+/* 
+.cw_navbar__primary-item.cw_navbar__primary-item--selected:visited {
+  color: #fff;
+} */
+
+.cw_navbar__primary-item.cw_navbar__primary-item--selected {
+  background-color: rgba(209,241,255,.1);
+  border: 1px solid #142c8e;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: transparent;
+  font-weight: 550;
+}
+
+
+.cw_navbar__primary-item, .cw_navbar__primary-item:active, .cw_navbar__primary-item:focus, .cw_navbar__primary-item:hover, .cw_navbar__primary-item:visited {
+  color: #ffddd1;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+
+
+.cw_navbar__secondary {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0.5rem 1rem 0;
+  margin-left: auto;
+}
+
+/* 
+.cw_navbar__secondary-item, .cw_navbar__secondary-item:active, .cw_navbar__secondary-item:focus, .cw_navbar__secondary-item:hover, .cw_navbar__secondary-item:visited {
+  color: #d1f1ff;
+  font-size: .875rem;
+  text-decoration: none;
+} */
+
+svg{
+  color: #d1f1ff;
+}
+
+.text-input{
+  color: #0c0c0d;
+  font-family: PayPalSansBig-Regular,Helvetica Neue,Arial,sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  position:relative;
+  text-align: left;
+  margin-top: 3rem;
+  margin-right: 2rem;
+}
+
+
+.text-input-control{
+  border-color: #909191;
+  box-shadow: none;
+  border-radius: 4rem;
+  padding: 1.1875rem 0.6875rem;
+  color: #0c0c0d;
+  font-family: PayPalSansBig-Regular,Helvetica Neue,Arial,sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  min-height: 4rem;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  border: 0.0625rem solid #909697;
+  background-color: #fff;
+  outline: none;
+  position: relative;
+  margin: auto;
+  width: 50rem;
+}
+
+.container{
+  display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    justify-items: center;
+}
+
+.d-button{
+  margin-top: 3.5rem;
+}
+
+.button-size{
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border: aliceblue;
+}
+
+.filter{
+  color: #0c0c0d;
+    font-family: PayPalSansBig-Regular,Helvetica Neue,Arial,sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    padding-top: 1.5rem;
+    margin-left: 15.5rem;
+}
+
+
+.c-filter{
+  display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 15rem;
+}
+
+.ul-filter{
+  list-style: none;
+  display: flex;
+  height: 2.75rem;
+  width: auto;
+  border-radius: 3.25rem;
+  padding-right: 0.5rem;
+}
+
+#ulf{
+    padding-left: 0;
+    margin: 0 0 1rem;
+}
+
+.lic{
+  padding-right: 1rem;
+}
+
+.btn-p{
+  font-family: PayPalSansBig-Regular,Helvetica Neue,Arial,sans-serif;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    padding: 0.25rem 0.875rem;
+    background: transparent;
+    height: 2.75rem;
+    width: auto;
+    border-radius: 3.25rem;
+    margin-top: 1.125rem;
+    color: #142c8e;
+    min-width: 3.75rem;
+    border-width: 0.7px!important;
+    cursor: pointer;
+    border: 1px solid cadetblue;
+}
+
+#main-btn{
+    background-color: #d1f1ff!important;
+    border-color: #d1f1ff!important;
+    color: #121661!important;
+}
+
+
+.stats-container{
+  text-align: center;
+        padding: 20px 0 25px;
+        margin-top: 50px;
+        box-shadow: none;
+    background-color: #fff;
+    border: none!important;
+    border-radius: 0!important;
+    margin-bottom: 0;
+}
+
+.stats-h1{
+  color: #0c0c0d;
+    font-family: PayPalSansBig-Regular,Helvetica Neue,Arial,sans-serif;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.stats-h2{
+  color: #0c0c0d;
+    font-family: PayPalSansBig-Regular,Helvetica Neue,Arial,sans-serif;
+    font-size: 1.3rem;
+    line-height: 2.25rem;
+    text-align: center;
+}
+
+.box-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.name-head{
+    color: #151516;
+    font-family: PayPalSansBig-Regular,Helvetica Neue,Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 0.25rem;
+    /* text-align: center; */
+}
+
+.name-p{
+  color: #1a1a1b;
+    font-family: PayPalSansBig-Regular,Helvetica Neue,Arial,sans-serif;
+    font-size: 0.7rem;
+    line-height: 0.25rem;
+}
+
+.svg-img-stat {
+  font-size: 1.875rem;
+  height: 30px;
+  width: 30px;
+  margin-right: 1rem;
+    border: 1px solid #c4babb;
+    padding: 1rem;
+    border-radius: 4rem;
+    background-color: darkgrey;
+}
+
+.start{
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-nav,
+section.menu{
+  display: none;
+}
+
+
+/* Media Queries */
+
+@media (min-width:400px) and (max-width:600px){
+     .cw_navbar__mainnav{
+      display: none;
+     }
+
+     .mobile-nav{
+      display: revert;
+    }
+
+    #menu-button{
+      display: block;
+      background: rgb(194, 203, 243);
+      border-radius: 10px;
+      border: 1px;
+      margin-top: 1.3rem;
+      margin-left: 1rem;
+      padding: 0.5rem;
+      font-size: large;
+    }
+
+    .text-input-control{
+      width: 20rem;
+    }
+
+    .filter{
+      margin-left: 4.5rem;
+    }
+
+    .c-filter{
+      margin-left: 4rem;
+    }
+
+    .box-container{
+      width: 75%;
+    }
+}
+
+@media(max-width:400px){
+  .cw_navbar__mainnav{
+   display: none;
+  }
+
+  .mobile-nav{
+   display: revert;
+ }
+
+ #menu-button{
+   display: block;
+   background: rgb(194, 203, 243);
+   border-radius: 10px;
+   border: 1px;
+   margin-top: 1.3rem;
+   margin-left: 1rem;
+   padding: 0.5rem;
+   font-size: large;
+ }
+
+ .text-input-control{
+   width: 15rem;
+ }
+
+ .filter{
+   margin-left: 2.5rem;
+ }
+
+ .c-filter{
+   margin-left: 2rem;
+ }
+
+ .box-container{
+   width: 90%;
+ }
+}
+
+
+@media (min-width:750px) and (max-width:940px){
+  .cw_navbar__mainnav{
+   display: none;
+  }
+
+  .mobile-nav{
+   display: revert;
+ }
+
+ #menu-button{
+   display: block;
+   background: rgb(194, 203, 243);
+   border-radius: 10px;
+   border: 1px;
+   margin-top: 1.3rem;
+   margin-left: 1rem;
+   padding: 0.5rem;
+   font-size: large;
+ }
+
+ .text-input-control{
+   width: 40rem;
+ }
+
+ .filter{
+   margin-left: 4.5rem;
+ }
+
+ .c-filter{
+   margin-left: 4rem;
+ }
+
+ .box-container{
+   width: 85%;
+ }
+}
+
+@media (min-width:590px) and (max-width:749px){
+  .cw_navbar__mainnav{
+   display: none;
+  }
+
+  .mobile-nav{
+   display: revert;
+ }
+
+ #menu-button{
+   display: block;
+   background: rgb(194, 203, 243);
+   border-radius: 10px;
+   border: 1px;
+   margin-top: 1.3rem;
+   margin-left: 1rem;
+   padding: 0.5rem;
+   font-size: large;
+ }
+
+ .text-input-control{
+   width: 30rem;
+ }
+
+ .filter{
+   margin-left: 2.5rem;
+ }
+
+ .c-filter{
+   margin-left: 2rem;
+ }
+
+ .box-container{
+   width: 90%;
+ }
+}
